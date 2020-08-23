@@ -1,8 +1,9 @@
 FROM python:3-alpine
 
-COPY glouton.py /glouton.py
+COPY glouton2.py /glouton2.py
 
-ENV CPULOAD 1
-ENV MEMORY 1
+ENV CPUS 1
+ENV MEM 256
+ENV STEP 10
 
-CMD ["python","/glouton.py"]
+CMD ["python","/glouton2.py"]
